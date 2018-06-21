@@ -1,0 +1,34 @@
+{
+  "name": "phaser3-ts-template",
+  "version": "0.0.1",
+  "main": "index.js",
+  "dependencies": {
+    "phaser": "^3.10.1"
+  },
+  "devDependencies": {
+    "@types/node": "^10.3.4",
+    "babel": "^6.23.0",
+    "babel-core": "^6.21.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-es2015": "^6.18.0",
+    "download": "^7.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "ts-loader": "^4.4.1",
+    "typescript": "^2.9.2",
+    "uglifyjs-webpack-plugin": "^1.2.5",
+    "webpack": "^4.8.3",
+    "webpack-cli": "^3.0.8",
+    "webpack-dev-server": "^3.1.4"
+  },
+  "scripts": {
+    "build-dev": "webpack",
+    "build-prod": "webpack --config ./webpack.production.config.js",
+    "run-dev": "webpack && webpack-dev-server",
+    "run-prod": "webpack --config ./webpack.production.config.js && webpack-dev-server --config ./webpack.production.config.js --compress",
+    "postinstall": "node ./postinstall.js",
+    "test": "eslint ./src/**/**.js"
+  },
+  "author": "superhakgoman",
+  "license": "ISC",
+  "description": "Phaser3 / Typescript 작업용 템플릿"
+}

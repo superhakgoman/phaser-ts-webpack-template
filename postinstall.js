@@ -1,0 +1,1 @@
+(require('download'))("https://github.com/photonstorm/phaser3-docs/raw/master/typescript/phaser.d.ts", "./@types/phaser/");
